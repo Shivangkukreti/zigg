@@ -93,7 +93,7 @@ const Particles = ({
   alphaParticles = false,
   particleBaseSize = 100,
   sizeRandomness = 1,
-  cameraDistance = 20,
+  cameraDistance = 10,
   disableRotation = false,
   pixelRatio = 1,
   className

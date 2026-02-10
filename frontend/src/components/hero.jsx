@@ -10,9 +10,10 @@ import Artworkasperstyle from "./artworkasperstyle";
 import ContentWinner from "./contentwinner";
 
 function Hero() {
-    let{active,setactive}=useContext(Appcontext)
+    let{active,setactive}=useContext(Appcontext)    
     return ( 
-        <div className="bg-white shadow-lg   shadow-white/40  h-50  rounded-4xl p-3 m-2 w-100">
+        <div className=" shadow-lg shadow-white/40 h-120 rounded-4xl p-0 m-0 w-240 overflow-hidden"
+>
             {active=='one'&& <Artworkcat></Artworkcat>}
             {active=='two'&& <Ournewartists></Ournewartists>}
             {active=='three'&& <Todayart></Todayart>}

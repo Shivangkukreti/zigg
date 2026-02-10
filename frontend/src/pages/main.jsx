@@ -1,6 +1,6 @@
 import Hero from "../components/hero";
 import Particles from "../components/gridscan.jsx";
-
+import Navbar from "../Navbar.jsx";
 import Gridsection from "../components/gridsection.jsx";
 import LightRays from "../components/ray.jsx";
 import Beams from "../components/beam.jsx";
@@ -47,8 +47,8 @@ function Main() {
     rotation={30}
   /> */}
       </div>
-<div className="flex justify-center items-center">
-  <Gridsection></Gridsection>  
+<div className="flex justify-end items-center">
+  <Gridsection ></Gridsection>  
 </div>
 
     </div>

@@ -27,7 +27,8 @@ const TextPressure = ({
   text = 'Compressa',
   fontFamily = 'Compressa VF',
   // This font is just an example, you should not use it in commercial projects.
-  fontUrl = 'https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2',
+  // fontUrl = 'https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2',
+  fontUrl = 'ttps://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap',
 
   width = true,
   weight = true,
@@ -38,7 +39,7 @@ const TextPressure = ({
   stroke = false,
   scale = false,
 
-  textColor = '#FFFFFF',
+  textColor = '#FFFF',
   strokeColor = '#FF0000',
   strokeWidth = 2,
   className = '',
@@ -197,13 +198,14 @@ const TextPressure = ({
         } ${stroke ? 'stroke' : ''} uppercase text-center`}
         style={{
           fontFamily,
-          fontSize: fontSize,
+          fontSize:"1rem" ,
           lineHeight,
           transform: `scale(1, ${scaleY})`,
           transformOrigin: 'center top',
           margin: 0,
-          fontWeight: 100,
+          fontWeight: 200,
           color: stroke ? undefined : textColor
+        
         }}
       >
         {chars.map((char, i) => (
