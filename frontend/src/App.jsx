@@ -1,11 +1,11 @@
-import Main from './pages/main'
-import SplashCursor from './components/splash';
+import Main from "./pages/main";
+import SplashCursor from "./components/splash";
 function App() {
   return (
     <>
-    <SplashCursor />
-<Main></Main>
+      <SplashCursor />
+      <Main></Main>
     </>
-  )
+  );
 }
-export default App
+export default App;

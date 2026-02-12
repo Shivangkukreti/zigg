@@ -12,7 +12,7 @@ import ContentWinner from "./contentwinner";
 function Hero() {
     let{active,setactive}=useContext(Appcontext)    
     return ( 
-        <div className=" shadow-lg shadow-white/40 h-120 rounded-4xl p-0 m-0 w-240 overflow-hidden"
+        <div className=" shadow-md shadow-white/5 border border-gray-100/10 h-100 rounded-4xl p-0 m-0 w-full  overflow-hidden"
 >
             {active=='one'&& <Artworkcat></Artworkcat>}
             {active=='two'&& <Ournewartists></Ournewartists>}

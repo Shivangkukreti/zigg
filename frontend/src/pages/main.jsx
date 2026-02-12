@@ -4,11 +4,21 @@ import Navbar from "../Navbar.jsx";
 import Gridsection from "../components/gridsection.jsx";
 import LightRays from "../components/ray.jsx";
 import Beams from "../components/beam.jsx";
+import { useEffect } from "react";
+
+
 
 function Main() {
+
+  useEffect(()=>{
+    document.body.style.overflow='hidden'
+    return ()=>{
+document.body.style.overflow='unset'
+    }
+  },[])
   return (
-    <div className="  bg-black  ">
-      <div className="h-screen w-screen  flex justify-center items-center" style={{  position: "relative" }}>
+    <div className=" overflow-hidden   bg-black  ">
+      <div className="h-fit w-screen   flex justify-center items-center" style={{  position: "relative" }}>
         {/* <Particles
           particleColors={["#ffffff"]}
           particleCount={700}
@@ -47,7 +57,7 @@ function Main() {
     rotation={30}
   /> */}
       </div>
-<div className="flex justify-end items-center">
+<div className=" h-fit flex justify-end items-center">
   <Gridsection ></Gridsection>  
 </div>
 

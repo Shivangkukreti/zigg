@@ -6,3 +6,52 @@ div{
     cursor: pointer;
    
 }
+
+@keyframes borderani {
+    0%{
+        
+        text-decoration: underline white;
+    }
+    100%{
+
+    }
+}
+
+
+
+
+.underline-animate {
+  position: relative;
+  text-decoration: none;
+  
+}
+
+.underline-animate::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;                 /* Start from 0 */
+  height: 2px;
+  background-color: white;
+  transition: width 0.4s ease;
+}
+
+.underline-animate-i:hover::after {
+  width: 80%;              /* Increase to full */
+}
+
+.underline-animate-i::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  width: 0;                 /* Start from 0 */
+  height: 2px;
+  background-color: white;
+  transition: width 0.4s ease;
+}
+
+.underline-animate:hover::after {
+  width: 90%;              /* Increase to full */
+}
